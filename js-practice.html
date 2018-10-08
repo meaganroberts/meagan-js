@@ -57,6 +57,59 @@
     var try03 = makeSquare(69);
     console.log(try03);
 
+    function makeName (first, middle, last) {
+      var name = first + " " + middle + " " + last;
+      return name;
+    }
+
+    var try1 = makeName ("Robert" , "Beto" , "O'Rourke");
+    console.log(try1.toUpperCase());
+
+    var try2 = makeName ("Lynzi" , "Elizabeth" , "Rojas");
+    console.log(try2);
+
+    var try3 = makeName ("James" , "Mitchell" , "Roberts");
+    console.log(try3);
+
+    console.log("Making better name function:");
+
+    // Make a name with middle initial
+
+    function makeBetterName (firstName1, middleName1, lastName1)
+      {
+      if (middleName1.length === 1) {
+      // adding and updating here
+      middleName1 = middleName1 + ".";
+      // adding and updating:
+      let completeName = firstName1 + " " + middleName1 + " " + lastName1;
+      return completeName;
+      } else {
+      // modifications here
+      let completeName = firstName1 + " " + middleName1 + " " + lastName1;
+      return completeName;
+      }
+      }
+
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    
+    console.log(makeBetterName("Donald", "F", "Trump"));
+
+    // on your own
+
+    function scores ( home, away ) {
+      if (home > away) {
+      return "The home team won";
+      } else if (home < away) {
+      return "The away team won";
+      } else {
+        return "The home and away teams tied";
+      }
+      }
+
+      console.log(scores(11,7));
+      console.log(scores(2,4));
+      console.log(scores(5,5));
+
   </script>
 </body>
 </html>
